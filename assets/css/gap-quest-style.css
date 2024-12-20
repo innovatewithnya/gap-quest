@@ -10,10 +10,15 @@ https://templatemo.com/tm-557-grad-school
 @import url(fontawesome.css);
 @import url("<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">");
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lora', serif;
+    margin: 0;
+    padding: 0;
 }
 
 /* Basic */
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+}
 
 a {
 	color: #3CF;
@@ -69,7 +74,7 @@ p {
 /* Buttons */
 
 .main-button a {
-    background-color: #f5a425;
+    background-color: #3AA17E;
     color: #fff;
     font-size: 13px;
     text-transform: uppercase;
@@ -130,7 +135,7 @@ a.menu-link { display: none; }
   }
   nav[role="navigation"] li:hover a,
   nav[role="navigation"] li.active a {
-      color: #f5a425;
+      color: #3AA17E;
   }
   
   @media screen and (min-width: 951px) {
@@ -165,7 +170,7 @@ a.menu-link { display: none; }
 }
 
 .main-header {
-    background-color: rgba(22,34,57,0.95);
+    background-color: #2C2A4A;
     height: 80px;
     position: fixed;
     z-index: 12;
@@ -177,17 +182,18 @@ a.menu-link { display: none; }
     float: left;
     line-height: 80px;
     padding-left: 60px;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .main-header .logo a {
-    font-size: 36px;
-    text-transform: uppercase;
-    font-weight: 800;
-    color: #fff;
+    font-weight: 700; /* Ensures bold style */
+    font-size: 2.5rem; /* Adjust size as needed */
+    color: #F4F4F4;
 }
+
 .main-header .logo a em {
     font-style: normal;
-    color: #f5a425;
+    color: #0057D9;
 }
 
 .main-menu {
@@ -212,7 +218,7 @@ a.menu-link { display: none; }
     text-transform: uppercase;
     letter-spacing: 0.5px;
     font-weight: 700;
-    color: #fff;
+    color: #F4F4F4;
     border: 2px solid transparent;
     transition: all 0.5s;
 }
@@ -269,13 +275,13 @@ a.menu-link { display: none; }
 }
 
 .main-menu li .sub-menu li a:hover {
-    color: #f5a425;
+    color: #0057D9;
     border: none;
 }
 
 .main-nav li:hover a,
 .main-nav li.active a {
-    border: 2px solid #f5a425;
+    border: 2px solid #0057D9;
 }
 
 @media (max-width: 950px) {
@@ -348,7 +354,7 @@ a.menu-link { display: none; }
 
 .main-banner .caption h2 em {
   font-style: normal;
-  color: #f5a425;
+  color: #0057D9;
   font-weight: 900;
 }
 
@@ -402,13 +408,13 @@ section.features .col-4 {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: #0c1228;
+  background-color: #2C2A4A;
   color: #fff;
   padding: 40px;
 }
 
 .features-content:hover {
-    background-color: #f5a425;
+    background-color: #0057D9;
     box-shadow: 0px 0px 30px rgba(0,0,0,0.5);
 }
 
@@ -565,15 +571,15 @@ section.why-us {
 #tabs ul .ui-tabs-active {
 }
 #tabs ul .ui-tabs-active a {
-  color: #f5a425;
+  color: #0057D9;
 }
 #tabs ul .ui-tabs-active a:after {
-  background-color: #f5a425;
+  background-color: #0057D9;
   width: 15px;
   height: 15px;
 }
 #tabs ul .ui-tabs-active a:before {
-  border-color: #f5a425;
+  border-color: #0057D9;
 }
 #tabs h4 {
     margin-top: 60px;
@@ -642,7 +648,7 @@ section.coming-soon .continer h4 {
 }
 section.coming-soon .continer h4 em {
     font-style: normal;
-    color: #f5a425;
+    color: #0057D9;
 }
 
 @media screen and (max-width: 767px) {
@@ -705,7 +711,7 @@ section.coming-soon .continer .counter .seconds .value {
 section.coming-soon .continer .counter span {
     font-size: 18px;
     text-transform: uppercase;
-    color: #f5a425;
+    color: #3AA17E;
     font-weight: 500;
     letter-spacing: 1px;
     margin-top: 0px;
@@ -777,7 +783,7 @@ section.coming-soon form input::placeholder { color: #fff; }
 
 section.coming-soon form button {
     margin-top: 10px;
-    background-color: #f5a425;
+    background-color: #3AA17E;
     color: #fff;
     font-size: 13px;
     text-transform: uppercase;
@@ -875,7 +881,7 @@ section.courses .owl-carousel button.owl-dot {
     outline: none;
 }
 section.courses .owl-carousel button.active {
-    background-color: #f5a425;
+    background-color: #0057D9;
 }
 
 
@@ -913,7 +919,7 @@ section.video .left-content h4 {
 }
 section.video .left-content h4 em {
     font-style: normal;
-    color: #f5a425;
+    color: #0057D9;
 }
 
 section.video .left-content .main-button {
@@ -958,7 +964,7 @@ section.video .left-content .main-button {
   margin-top: -32.5px;
   margin-left: -32.5px;
   border-radius: 50%;
-  background-color: #f5a425;
+  background-color: #3AA17E;
   z-index: 10;
 }
 .video-item figure a:after {
@@ -974,7 +980,7 @@ section.video .left-content .main-button {
   z-index: 10;
 }
 .video-item figure a:hover:before {
-  background-color: #f5a425;
+  background-color: #218060;
 }
 
 .video-item .video-caption {
@@ -1513,7 +1519,7 @@ section.contact form textarea::placeholder { color: #fff; }
 section.contact form textarea::placeholder { color: #fff; }
 
 section.contact form button {
-    background-color: #f5a425;
+    background-color: #3AA17E;
     color: #fff;
     font-size: 13px;
     text-transform: uppercase;
@@ -1545,7 +1551,7 @@ footer p {
 
 footer p a,
 footer p a:hover {
-    color: #f5a425;
+    color: #0057D9;
 }
 
 @media screen and (max-width: 992px) {

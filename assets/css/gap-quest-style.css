@@ -2,7 +2,7 @@
 @import url(fontawesome.css);
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900');
 body {
-    font-family: 'Raleway', serif;
+    font-family: 'Raleway', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -816,20 +816,32 @@ section.coming-soon form button {
 /* Courses */
 
 section.courses {
-    background-image: url(../images/choosing-bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #172238;
-    padding-bottom: 100px;
-    padding: 0px 30px 100px 30px;
+  background-image: url(../images/choosing-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #172238;
+  padding-bottom: 100px;
+  padding: 0px 30px 100px 30px;
+}
+
+section.courses .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  height: 100%; /* Ensure items stretch to fill the container */
 }
 
 section.courses .item img {
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
 }
 
 section.courses .item .down-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1; /* Allow down-content to grow and fill the available space */
     padding: 30px;
     background-color: #F4F4F4;
     border-bottom-right-radius: 5px;
@@ -846,8 +858,12 @@ section.courses .item .down-content h4 {
     margin-bottom: 20px;
 }
 
-section.courses .item .down-content p {
-    margin-bottom: 25px;
+section.courses .item .down-content .description {
+  flex-grow: 1; /* Allow the description div to grow and fill the available space */
+}
+
+section.courses .item .down-content .author-image {
+  margin-top: auto; /* Push the author-image to the bottom */
 }
 
 section.courses .item .down-content img {
@@ -899,8 +915,6 @@ section.courses .owl-carousel button.owl-dot {
 section.courses .owl-carousel button.active {
     background-color: #11adad;
 }
-
-
 
 
 
